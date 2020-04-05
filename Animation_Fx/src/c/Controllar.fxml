@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#initialize" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #ffd180;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c.Controllar">
+   <children>
+      <Line endX="100.0" layoutX="200.0" layoutY="452.0" startX="-100.0" />
+      <Slider fx:id="radiusSlider" blockIncrement="5.0" layoutX="31.0" layoutY="194.0" majorTickUnit="5.0" max="50.0" min="20.0" orientation="VERTICAL" prefHeight="222.0" prefWidth="49.0" showTickLabels="true" showTickMarks="true" />
+      <Slider fx:id="rateSlider" blockIncrement="20.0" layoutX="321.0" layoutY="194.0" orientation="VERTICAL" prefHeight="222.0" prefWidth="49.0" showTickLabels="true" showTickMarks="true" />
+      <Circle fx:id="circel" fill="#64ffda" layoutX="200.0" layoutY="405.0" radius="45.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text layoutX="56.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WIN" wrappingWidth="71.13671875">
+         <font>
+            <Font name="MV Boli" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="293.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loose" wrappingWidth="55.000000953674316">
+         <font>
+            <Font name="MV Boli" size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="catchCount" layoutX="48.0" layoutY="43.0" prefHeight="30.0" prefWidth="65.0" />
+      <Label fx:id="looseCount" layoutX="289.0" layoutY="43.0" prefHeight="30.0" prefWidth="65.0">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
